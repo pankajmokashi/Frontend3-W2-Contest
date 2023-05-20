@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #1E1E1E; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: auto;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.display{
+    border: 1px solid black;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.text{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.container .section1{
+    background-color: white;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    height: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: center;
+    gap: 10px;
+}
+.section1 .heading{
+    margin-bottom: 10px;
+}
+
+.container .section2{
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.section2 input{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid rgb(91, 91, 91);
+}
+.section2 input:focus{
+    outline: none;
+}
+.section2 button{
+    width: 60px;
+    border: none;
+    padding: 4px 0;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;   
+}
+.container .section3{
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+}
+.lat-long{
+    display: flex;
+} 
+.lat-long div{
+    width: 50%;
+}
+.section3 #address{
+    color: white;
+    border: 1px solid rgb(40, 40, 40);
+}
+.section3 #error{
+    font-size: 14px;
+    color: red;
+}
